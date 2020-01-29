@@ -4,36 +4,36 @@ class Odometer extends React.Component {
 
 	constructor(props) {
 		super(props);
-		this.state = {
-			clicks: 0,
-			show: true
-		};
+		this.state = {number: 0, show: true};
 	}
-
+	//TODO: Binding
 	increment_item1 = () => {
-		this.setState({ clicks: this.state.clicks + 1 });
+		const oldnum = this.state.number;
+		let newnum = oldnum === 9999 ? 0 : oldnum + 1
+		this.setState({ number: this.state.number + 1 });
 	}
 	decrease_item1 = () => {
-		this.setState({ clicks: this.state.clicks - 1 });
+		this.setState({ number: this.state.number - 1 });
 	}
 	increment_item10 = () => {
-		this.setState({ clicks: this.state.clicks + 10 });
+		this.setState({ number: this.state.number + 10 });
 	}
 	decrease_item10 = () => {
-		this.setState({ clicks: this.state.clicks - 10 });
+		this.setState({ number: this.state.number - 10 });
 	}
 	increment_item100 = () => {
-		this.setState({ clicks: this.state.clicks + 100 });
+		this.setState({ number: this.state.number + 100 });
 	}
 	decrease_item100 = () => {
-		this.setState({ clicks: this.state.clicks - 100 });
+		this.setState({ number: this.state.number - 100 });
 	}
 	increment_item1000 = () => {
-		this.setState({ clicks: this.state.clicks + 1000 });
+		this.setState({ number: this.state.number + 1000 });
 	}
 	decrease_item1000 = () => {
-		this.setState({ clicks: this.state.clicks - 1000 });
+		this.setState({ number: this.state.number - 1000 });
 	}
+	//TODO: padding
 
 	render() {
 		return (
@@ -46,7 +46,7 @@ class Odometer extends React.Component {
 				<button onClick={this.decrease_item100}>Click to decrease by 100</button>
 				<button onClick={this.increment_item1000}>Click to increment by 1000</button>
 				<button onClick={this.decrease_item1000}>Click to decrease by 1000</button>
-				{this.state.show ? <h2>{this.state.clicks}</h2> : ''}
+				{this.state.show ? <h2>{this.state.number}</h2> : ''}
 			</div>
 		);
 	}
