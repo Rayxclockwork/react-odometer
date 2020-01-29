@@ -2,6 +2,7 @@
 
 
 **Author**: Raven Delaney
+
 **Version**: 1.0.0 
 
 ## Overview
@@ -20,17 +21,14 @@ This was built entirely in the command line and VS code using React.
 
 ## API
 <!-- Provide detailed instructions for your applications usage. This should include any methods or endpoints available to the user/client/developer. Each section should be formatted to provide clear syntax for usage, example calls including input data requirements and options, and example responses or return values. -->
-App - renders component pages that have been imported in
-
-Header - Creates and renders Header of page, exported to App.js
-
-Odometer - Creates and renders numbers on page and buttons to increment numbers, exported to App.js
-
-Footer - Creates and renders footer text of page, exported to App.js
+* App - renders component pages that have been imported in
+* Header - Creates and renders Header of page, exported to App.js
+* Odometer - Creates and renders numbers on page and buttons to increment numbers, exported to App.js
+* Footer - Creates and renders footer text of page, exported to App.js
 
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 01-01-2001 4:59pm - Added functionality to add and delete some things.
 -->
-1/28/2020 4:30pm - initialized repo
-1/28/2020 9:30pm - Numbers appear on screen and can be incremented
+* 1/28/2020 4:30pm - initialized repo
+* 1/28/2020 9:30pm - Numbers appear on screen and can be incremented
