@@ -1,12 +1,14 @@
 import React from 'react';
-import Header from './Header';
-import Footer from './Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Odometer from './components/Odometer';
 
 function App() {
 
     return (
     <div>
-      <Header name="Skyler"/>
+      <Header name=" "/>
+      <Odometer />
       <Footer />
     </div>
     );

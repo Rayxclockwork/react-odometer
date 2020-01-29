@@ -4,7 +4,7 @@ class Header extends React.Component {
 	
 	
 	render(){
-		let greeting = 'Hello,';
+		let greeting = 'Hello';
 
 	return <h1>{greeting} {this.props.name}</h1>
 	}
